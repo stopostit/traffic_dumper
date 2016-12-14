@@ -33,7 +33,8 @@
 *.su
 
 CMakeCache.txt
-CMakefiles/*
+CMakefiles/
+Build/
 Makefile
 cmake_install.cmake
 *.pcap
