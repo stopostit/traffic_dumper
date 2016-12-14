@@ -105,9 +105,33 @@ CMakeFiles/traffic_dumper.dir/link/ethernet.c.o.provides: CMakeFiles/traffic_dum
 CMakeFiles/traffic_dumper.dir/link/ethernet.c.o.provides.build: CMakeFiles/traffic_dumper.dir/link/ethernet.c.o
 
 
+CMakeFiles/traffic_dumper.dir/network/ip.c.o: CMakeFiles/traffic_dumper.dir/flags.make
+CMakeFiles/traffic_dumper.dir/network/ip.c.o: network/ip.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/traffic_dumper.dir/network/ip.c.o"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/traffic_dumper.dir/network/ip.c.o   -c /home/stopostit/Workspace/TSR_proj/traffic_dumper/network/ip.c
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/traffic_dumper.dir/network/ip.c.i"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/stopostit/Workspace/TSR_proj/traffic_dumper/network/ip.c > CMakeFiles/traffic_dumper.dir/network/ip.c.i
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/traffic_dumper.dir/network/ip.c.s"
+	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/stopostit/Workspace/TSR_proj/traffic_dumper/network/ip.c -o CMakeFiles/traffic_dumper.dir/network/ip.c.s
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.o.requires:
+
+.PHONY : CMakeFiles/traffic_dumper.dir/network/ip.c.o.requires
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.o.provides: CMakeFiles/traffic_dumper.dir/network/ip.c.o.requires
+	$(MAKE) -f CMakeFiles/traffic_dumper.dir/build.make CMakeFiles/traffic_dumper.dir/network/ip.c.o.provides.build
+.PHONY : CMakeFiles/traffic_dumper.dir/network/ip.c.o.provides
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.o.provides.build: CMakeFiles/traffic_dumper.dir/network/ip.c.o
+
+
 CMakeFiles/traffic_dumper.dir/getopt.c.o: CMakeFiles/traffic_dumper.dir/flags.make
 CMakeFiles/traffic_dumper.dir/getopt.c.o: getopt.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/traffic_dumper.dir/getopt.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/traffic_dumper.dir/getopt.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/traffic_dumper.dir/getopt.c.o   -c /home/stopostit/Workspace/TSR_proj/traffic_dumper/getopt.c
 
 CMakeFiles/traffic_dumper.dir/getopt.c.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/traffic_dumper.dir/getopt.c.o.provides.build: CMakeFiles/traffic_dump
 
 CMakeFiles/traffic_dumper.dir/display.c.o: CMakeFiles/traffic_dumper.dir/flags.make
 CMakeFiles/traffic_dumper.dir/display.c.o: display.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/traffic_dumper.dir/display.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/traffic_dumper.dir/display.c.o"
 	/usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/traffic_dumper.dir/display.c.o   -c /home/stopostit/Workspace/TSR_proj/traffic_dumper/display.c
 
 CMakeFiles/traffic_dumper.dir/display.c.i: cmake_force
@@ -157,6 +181,7 @@ CMakeFiles/traffic_dumper.dir/display.c.o.provides.build: CMakeFiles/traffic_dum
 traffic_dumper_OBJECTS = \
 "CMakeFiles/traffic_dumper.dir/main.c.o" \
 "CMakeFiles/traffic_dumper.dir/link/ethernet.c.o" \
+"CMakeFiles/traffic_dumper.dir/network/ip.c.o" \
 "CMakeFiles/traffic_dumper.dir/getopt.c.o" \
 "CMakeFiles/traffic_dumper.dir/display.c.o"
 
@@ -165,11 +190,12 @@ traffic_dumper_EXTERNAL_OBJECTS =
 
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/main.c.o
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/link/ethernet.c.o
+build/traffic_dumper: CMakeFiles/traffic_dumper.dir/network/ip.c.o
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/getopt.c.o
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/display.c.o
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/build.make
 build/traffic_dumper: CMakeFiles/traffic_dumper.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable build/traffic_dumper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable build/traffic_dumper"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/traffic_dumper.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,6 +205,7 @@ CMakeFiles/traffic_dumper.dir/build: build/traffic_dumper
 
 CMakeFiles/traffic_dumper.dir/requires: CMakeFiles/traffic_dumper.dir/main.c.o.requires
 CMakeFiles/traffic_dumper.dir/requires: CMakeFiles/traffic_dumper.dir/link/ethernet.c.o.requires
+CMakeFiles/traffic_dumper.dir/requires: CMakeFiles/traffic_dumper.dir/network/ip.c.o.requires
 CMakeFiles/traffic_dumper.dir/requires: CMakeFiles/traffic_dumper.dir/getopt.c.o.requires
 CMakeFiles/traffic_dumper.dir/requires: CMakeFiles/traffic_dumper.dir/display.c.o.requires
 

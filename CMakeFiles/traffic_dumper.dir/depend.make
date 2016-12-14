@@ -7,10 +7,16 @@ CMakeFiles/traffic_dumper.dir/display.c.o: display.h
 CMakeFiles/traffic_dumper.dir/getopt.c.o: getopt.c
 CMakeFiles/traffic_dumper.dir/getopt.c.o: getopt.h
 
+CMakeFiles/traffic_dumper.dir/link/ethernet.c.o: display.h
 CMakeFiles/traffic_dumper.dir/link/ethernet.c.o: link/ethernet.c
 CMakeFiles/traffic_dumper.dir/link/ethernet.c.o: link/ethernet.h
 
+CMakeFiles/traffic_dumper.dir/main.c.o: display.h
 CMakeFiles/traffic_dumper.dir/main.c.o: getopt.h
 CMakeFiles/traffic_dumper.dir/main.c.o: link/ethernet.h
 CMakeFiles/traffic_dumper.dir/main.c.o: main.c
+
+CMakeFiles/traffic_dumper.dir/network/ip.c.o: display.h
+CMakeFiles/traffic_dumper.dir/network/ip.c.o: network/ip.c
+CMakeFiles/traffic_dumper.dir/network/ip.c.o: network/ip.h
 

@@ -1,11 +1,20 @@
 #ifndef ETHERNET_H
 #define ETHERNET_H
 #include <net/ethernet.h>
+#include <netinet/in.h>
 #include <stdint.h>
-#include <netinet/if_ether.h> //access to ethertypes and arp
-
-void print_ether_address(uint8_t ether_addr[ETH_ALEN]);
-void print_ether_type(u_int16_t type);
+#include"../display.h"
+#ifndef IP
+#define IP 0x0800
+#endif
+#ifndef ARP
+#define ARP 0x806
+#endif
+#ifndef RARP
+#define ETHERTYPE_RARP 0x835
+#endif
+void display_ether_addr(uint8_t ether_addr[ETH_ALEN]);
+void display_ETHERTYPE(uint16_t type);
 void handle_ethernet(const uint8_t *bytes);
 
 #endif

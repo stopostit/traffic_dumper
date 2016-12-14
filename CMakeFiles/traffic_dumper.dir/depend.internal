@@ -8,9 +8,15 @@ CMakeFiles/traffic_dumper.dir/getopt.c.o
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/getopt.c
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/getopt.h
 CMakeFiles/traffic_dumper.dir/link/ethernet.c.o
+ /home/stopostit/Workspace/TSR_proj/traffic_dumper/display.h
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/link/ethernet.c
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/link/ethernet.h
 CMakeFiles/traffic_dumper.dir/main.c.o
+ /home/stopostit/Workspace/TSR_proj/traffic_dumper/display.h
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/getopt.h
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/link/ethernet.h
  /home/stopostit/Workspace/TSR_proj/traffic_dumper/main.c
+CMakeFiles/traffic_dumper.dir/network/ip.c.o
+ /home/stopostit/Workspace/TSR_proj/traffic_dumper/display.h
+ /home/stopostit/Workspace/TSR_proj/traffic_dumper/network/ip.c
+ /home/stopostit/Workspace/TSR_proj/traffic_dumper/network/ip.h

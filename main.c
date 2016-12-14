@@ -5,10 +5,10 @@
 #include <pcap.h>
 #include "getopt.h"
 #include "link/ethernet.h"
+#include "display.h"
 //#include "network/ip.h"
 //*
-
-
+int verbosity;
 //*/
 void abort_pcap(const char *errbuf) {
     perror("error");
@@ -18,8 +18,9 @@ void abort_pcap(const char *errbuf) {
 void got_packet(u_char *user, const struct pcap_pkthdr *h, const u_char *bytes){
     static int packet_count=0;
 
-    /*
+    //*
     //display fonction
+    printf("Packet #%d\n",packet_count++);
     //*/
     handle_ethernet(bytes);
 }
@@ -27,7 +28,7 @@ int main(int argc, char const *argv[]) {
   char* device=NULL;
   char* capture_file=NULL;
   char* filter="";
-  int verbosity=1; // default level of verbosity: concise
+  verbosity=2; // default level of verbosity: medium
   char errbuf[PCAP_ERRBUF_SIZE];
   pcap_t *capture;
   bpf_u_int32 ip;
