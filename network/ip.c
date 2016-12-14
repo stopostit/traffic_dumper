@@ -49,10 +49,10 @@ void handle_IP(const uint8_t *bytes){
             printf("handle_TCP();\n");
             break;
         case 0x11:
-            printf("handle_UDP(bytes);\n");
+            handle_udp(bytes);
             break;
         default:
-            printf("Unknown protocol 0x%x\n", ip_hdr->protocol);
+            printf(" (゜-゜) Unknown protocol 0x%x\n", ip_hdr->protocol);
     }
 
 

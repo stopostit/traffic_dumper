@@ -3,6 +3,6 @@
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_CURRENT_SOURCE_DIR}/build")
 set(CMAKE_C_STANDARD 99)
 add_definitions("-Wall -Wextra -lpcap")
-set(SOURCE_FILES main.c link/ethernet.c link/ethernet.h network/ip.c network/ip.h getopt.c getopt.h display.c display.h)
+set(SOURCE_FILES main.c link/ethernet.c link/ethernet.h network/ip.c network/ip.h transport/UDP.c transport/UDP.h getopt.c getopt.h display.c display.h)
 add_executable(traffic_dumper ${SOURCE_FILES})
 target_link_libraries(traffic_dumper pcap)

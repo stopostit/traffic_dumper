@@ -20,7 +20,7 @@ void got_packet(u_char *user, const struct pcap_pkthdr *h, const u_char *bytes){
 
     //*
     //display fonction
-    printf("Packet #%d\n",packet_count++);
+    printf("\nPacket #%d\n",packet_count++);
     //*/
     handle_ethernet(bytes);
 }
