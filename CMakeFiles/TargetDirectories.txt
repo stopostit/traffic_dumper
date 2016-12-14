@@ -1,3 +1,0 @@
-/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles/edit_cache.dir
-/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles/rebuild_cache.dir
-/home/stopostit/Workspace/TSR_proj/traffic_dumper/CMakeFiles/traffic_dumper.dir

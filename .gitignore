@@ -33,7 +33,7 @@
 *.su
 
 CMakeCache.txt
-CMakefiles/
+CMakeFiles/
 Build/
 Makefile
 cmake_install.cmake
