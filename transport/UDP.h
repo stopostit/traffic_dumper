@@ -25,5 +25,5 @@
 #ifndef SNMP_PORT
 #define SNMP_PORT 161
 #endif
-void handle_udp(const unsigned char *bytes);
+void handle_udp(const uint8_t *bytes);
 #endif

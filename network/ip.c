@@ -41,12 +41,14 @@ void handle_IP(const uint8_t *bytes){
         bytes++;
     }
 
+    display("\n\t",VERB_LEVEL_3);
+
     switch (ip_hdr->protocol) {
         case 0x01:
             printf("handle_ICMP(bytes);");
             break;
         case 0x06:
-            printf("handle_TCP();\n");
+            handle_tcp(bytes);
             break;
         case 0x11:
             handle_udp(bytes);

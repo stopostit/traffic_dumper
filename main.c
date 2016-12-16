@@ -20,7 +20,7 @@ void got_packet(u_char *user, const struct pcap_pkthdr *h, const u_char *bytes){
 
     //*
     //display fonction
-    printf("\nPacket #%d\n",packet_count++);
+    printf("\n\nPacket #%d\n",packet_count++);
     //*/
     handle_ethernet(bytes);
 }
@@ -41,31 +41,31 @@ int main(int argc, char const *argv[]) {
         exit(EXIT_FAILURE);
     }
 
-    if(capture_file == NULL) {
-        if(device == NULL && (device = pcap_lookupdev(errbuf)) == NULL) {
-            abort_pcap("pcap_lookupdev");
-        }
-        printf("using device %s for capture \n", device);
-
-        if(pcap_lookupnet(device, &ip, &mask, errbuf) != 0) {
-            abort_pcap("pcap_lookupnet");
-        }
-        //print_ip_addr(ip); printf(" ^ "); print_ip_addr(mask); printf(")\n");
-    }
-    else {
-        if((capture = pcap_open_offline(capture_file, errbuf)) == NULL) {
-            abort_pcap("pcap_open_offline");
-        }
-    }
-    if(pcap_compile(capture, &bpf_program, filter, 0, ip) == -1) {
+  if(capture_file == NULL) {
+      if(device == NULL && (device = pcap_lookupdev(errbuf)) == NULL) {
+          abort_pcap("pcap_lookupdev");
+      }
+      printf("using device %s for capture \n", device);
+      if(pcap_lookupnet(device, &ip, &mask, errbuf) != 0) {
+          abort_pcap("pcap_lookupnet");
+      }
+  }
+  else {
+      if((capture = pcap_open_offline(capture_file, errbuf)) == NULL) {
+          abort_pcap("pcap_open_offline");
+      }
+  }
+  if(pcap_compile(capture, &bpf_program, filter, 0, ip) == -1) {
         //pcap_perror(capture);
         abort_pcap("pcap_compile");
-    }
-    if(pcap_setfilter(capture, &bpf_program) != 0) {
-        abort_pcap("pcap_setfilter");
-    }
-    pcap_freecode(&bpf_program);
+  }
+  if(pcap_setfilter(capture, &bpf_program) != 0) {
+      abort_pcap("pcap_setfilter");
+  }
 
-    pcap_loop(capture, -1, &got_packet, NULL);
+  pcap_freecode(&bpf_program);
+
+  pcap_loop(capture, -1, &got_packet, NULL);
+  printf("\n" );
   return 0;
 }

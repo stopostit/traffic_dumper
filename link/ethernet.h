@@ -4,6 +4,7 @@
 #include <netinet/in.h>
 #include <stdint.h>
 #include"../display.h"
+#include "../network/ip.h"
 #ifndef IP
 #define IP 0x0800
 #endif
